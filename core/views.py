@@ -31,6 +31,7 @@ def views(request,c_slug,product_slug):
 #cart
 def c_id(request):
     ct_id = request.session.session_key
+    # small erorr
     if not ct_id:
         ct_id = request.session.create()
     return ct_id

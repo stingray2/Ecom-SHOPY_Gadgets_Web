@@ -5,8 +5,9 @@ from django.shortcuts import render,redirect,get_object_or_404
 from django.core.exceptions import ObjectDoesNotExist
 #endcart
 #Register
-from .forms import CreateUserForm
+
 from django.contrib.auth import authenticate,login,logout
+from .forms import CreateUserForm
 from django.contrib import messages
 #endregister
 # Create your views here.

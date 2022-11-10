@@ -47,6 +47,7 @@ def cartdetails(request, tot=0, count=0, c=0,c_item=None):
         count = tot + 100
     except ObjectDoesNotExist:
         pass
+    #It working
 
     return render(request, 'cart.html', {'ci': c_item, 't': tot, 'cn': count, 'c': c})
 
